@@ -1,0 +1,227 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  word-break: break-word;
+}
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  background-color: FFFDF4;
+  color: #3F514B;
+}
+.container {
+  max-width: 1170px;
+  padding: 0 15px;
+  margin: 0 auto;
+  width: 100%;
+  @media ( min-width: 576px){
+      max-width: 540px;
+  }
+  @media (min-width: 768px){
+      max-width: 720px;
+  }
+  @media (min-width: 992px){
+      max-width: 960px;
+  }
+  @media (min-width: 1200px){
+      max-width: 1140px;
+  }
+  @media (min-width: 1400px){
+      max-width: 1320px;
+  }
+  
+}
+img {
+  display: block;
+}
+.d-flex {
+  display: flex;
+}
+.wrapper {
+  overflow: hidden;
+}
+.block__box {
+  @media (max-width: 991px) {
+    padding: 60px 0;
+    .box {
+      margin-right: 0;
+    }
+  }
+  padding: 75px 0;
+  width: 100%;
+  .box {
+    margin-right: 60%;
+    padding-bottom: 40px;
+    @media (max-width: 991px) {
+      margin-right: 0;
+    }
+    .box__title {
+      font-size: 45px;
+      padding-bottom: 30px;
+      font-weight: 500;
+    }
+    .box__text {
+      font-size: 19px;
+      font-weight: 400;
+    }
+  }
+  .yoga {
+    flex-wrap: wrap;
+    text-align: left;
+    .yoga__box {
+      margin: 0 15px;
+      width: calc((100% - 120px) / 4);
+      &:nth-of-type(1){
+        margin-left: 0;
+
+      }
+      @media( max-width: 991px) {
+        width: calc(( 100% - 60px ) / 2);
+        &:nth-of-type(1), &:nth-of-type(2) {
+            margin-bottom: 20px;
+        }
+        &:nth-of-type(3) {
+          margin-left: 0;
+      }
+        
+      }
+      @media( max-width: 481px) {
+          width: 100%;
+          &:nth-of-type(3) {
+              margin-bottom: 20px;
+          }
+          &:nth-of-type(2), &:nth-of-type(4) {
+            margin-left: 0;}
+        
+    }
+      .yoga__box-image {
+        display: inline-block;
+        width: 100%;
+      }
+      .yoga__box-content {
+        padding-top: 15px;
+        .content-box {
+          .content-box-title {
+            font-size: 20px;
+            
+          }
+          .content-box-text {
+            font-size: 17px;
+            padding: 5px 0;
+          }
+          .content-box-price {
+            padding-bottom: 15px;
+            .price-dl {
+              text-decoration: line-through;
+              font-size: 13px;
+            }
+            .price-n {
+              font-size: 18px;
+              margin-left: 5px;
+            }
+          }
+        }
+        .content-plan {
+          .cpn-box {
+            .content-plan-component {
+              margin: 10px 0;
+              
+            }
+            .content-plan-week{
+              font-size: 15px;
+              padding-right: 25px;
+            }
+            .content-plan-content {
+              font-size: 14px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+}
+.owlbox {
+  width: 100%;
+  flex-wrap: wrap;
+  
+  .container {
+    justify-content: center;
+    .owlbox__block {
+      text-align: center;
+      box-shadow: 0 0 30px 0 rgb( 177 177 177 / 20%);
+      margin: 30px 90px;
+      padding: 50px;
+      border-radius: 10px;
+      justify-content: center;
+      @media (max-width: 991px){
+        margin: 30px 0px;
+       }
+       @media (max-width: 485px){
+        padding: 10px;
+       }
+       
+      .owlbox__block-img {
+        border-radius: 10px;
+        width: calc((100% - 60px)/ 2);
+        display: inline-block;
+      }
+      .owlbox__block-item {
+        padding: 10px 30px;
+        @media (max-width: 481px) {
+          padding: 5px 5px;
+         }
+
+        .item-title {
+          text-transform: uppercase;
+          font-size: 14px;
+          color: #000000 ;
+          opacity: 30%;
+          padding-top: 5px;
+          @media (max-width: 481px) {
+            font-size: 10px;
+           }
+        }
+        .quote-icon {
+          margin-top: 45px;
+          margin-bottom: 10px;
+          @media (max-width: 481px) {
+            margin-top: 10px;
+            margin-bottom: 10px;
+           }
+          img{
+              width: auto;
+              display: inline-block;
+              @media (max-width: 425px) {
+                  width: 25px;
+              }
+            }
+
+        }
+        .item-title-title {
+          font-size: 30px;
+          @media (max-width: 1200px){
+           font-size: 20px;
+          }
+          @media (max-width: 991px){
+            font-size: 15px;
+           }
+        }
+        .item-title-text {
+          font-size: 16px;
+          padding-top: 10px;
+        }
+        .item-title-tg {
+          font-size: 15px;
+          opacity: 30%;
+          color: #000;
+        }
+      }
+    }
+  }
+}
