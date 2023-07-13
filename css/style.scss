@@ -15,10 +15,11 @@ body {
   color: #3F514B;
 }
 .container {
-  max-width: 1170px;
-  padding: 0 15px;
-  margin: 0 auto;
   width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
   @media ( min-width: 576px){
       max-width: 540px;
   }
@@ -31,8 +32,8 @@ body {
   @media (min-width: 1200px){
       max-width: 1140px;
   }
-  @media (min-width: 1400px){
-      max-width: 1320px;
+  @media (min-width: 1439px){
+      max-width: 1530px;
   }
   
 }
@@ -43,7 +44,9 @@ img {
   display: flex;
 }
 .wrapper {
+  background-color: #FFFDF4;
   overflow: hidden;
+  padding: 70px 0;
 }
 .block__box {
   @media (max-width: 991px) {
@@ -52,36 +55,34 @@ img {
       margin-right: 0;
     }
   }
-  padding: 75px 0;
   width: 100%;
   .box {
-    margin-right: 60%;
-    padding-bottom: 40px;
+    
+    margin-bottom: 40px;
     @media (max-width: 991px) {
       margin-right: 0;
     }
     .box__title {
       font-size: 45px;
-      padding-bottom: 30px;
-      font-weight: 500;
+      padding-bottom: 20px;
+      font-weight: 400;
+      letter-spacing: -1px;
     }
     .box__text {
       font-size: 19px;
       font-weight: 400;
+      max-width: 519px;
+      line-height: 27px;
     }
   }
   .yoga {
-    flex-wrap: wrap;
-    text-align: left;
-    .yoga__box {
-      margin: 0 15px;
-      width: calc((100% - 120px) / 4);
-      &:nth-of-type(1){
-        margin-left: 0;
 
-      }
+    text-align: left;
+    display: flex;
+    gap: 22px;
+    .yoga__box {
       @media( max-width: 991px) {
-        width: calc(( 100% - 60px ) / 2);
+        
         &:nth-of-type(1), &:nth-of-type(2) {
             margin-bottom: 20px;
         }
@@ -104,40 +105,48 @@ img {
         width: 100%;
       }
       .yoga__box-content {
-        padding-top: 15px;
+        margin-top: 15px;
         .content-box {
           .content-box-title {
             font-size: 20px;
-            
+            color: #414F42;
+            font-weight: 400;
           }
           .content-box-text {
             font-size: 17px;
-            padding: 5px 0;
+            margin: 5px 0;
+            max-width: 310px;
+            line-height: 24px;
           }
           .content-box-price {
-            padding-bottom: 15px;
             .price-dl {
               text-decoration: line-through;
               font-size: 13px;
+              color: #72776C;
+              line-height: 18px;
             }
             .price-n {
               font-size: 18px;
+              line-height: 20px;
               margin-left: 5px;
             }
           }
         }
         .content-plan {
+          margin-top: 20px;
           .cpn-box {
-            .content-plan-component {
-              margin: 10px 0;
-              
-            }
+            padding: 12px 0 8px 0;
+              border-top: 1px solid #ECEDEC;
+              &:nth-of-type(3) {
+                border-bottom: 1px solid #ECEDEC;}
             .content-plan-week{
               font-size: 15px;
-              padding-right: 25px;
+              margin-right: 20px;
+              line-height: 18px;
             }
             .content-plan-content {
               font-size: 14px;
+              line-height: 24px;
             }
           }
         }
@@ -147,17 +156,20 @@ img {
 
 }
 .owlbox {
-  width: 100%;
-  flex-wrap: wrap;
+  background-color: #F4F4F4;
+  padding: 65px 0;
   
   .container {
     justify-content: center;
+    @media (min-width: 1440px) {
+      max-width: 1475px;
+    }
     .owlbox__block {
       text-align: center;
-      box-shadow: 0 0 30px 0 rgb( 177 177 177 / 20%);
-      margin: 30px 90px;
+      background-color: #ffff;
+      gap: 20px;
       padding: 50px;
-      border-radius: 10px;
+      border-radius: 20px;
       justify-content: center;
       @media (max-width: 991px){
         margin: 30px 0px;
@@ -168,11 +180,11 @@ img {
        
       .owlbox__block-img {
         border-radius: 10px;
-        width: calc((100% - 60px)/ 2);
         display: inline-block;
+        width: 50%;
       }
       .owlbox__block-item {
-        padding: 10px 30px;
+        width: 50%;
         @media (max-width: 481px) {
           padding: 5px 5px;
          }
@@ -182,14 +194,14 @@ img {
           font-size: 14px;
           color: #000000 ;
           opacity: 30%;
-          padding-top: 5px;
+          margin-bottom: 50px;
+          margin-top: 20px;
+          line-height: 20px;
           @media (max-width: 481px) {
             font-size: 10px;
            }
         }
         .quote-icon {
-          margin-top: 45px;
-          margin-bottom: 10px;
           @media (max-width: 481px) {
             margin-top: 10px;
             margin-bottom: 10px;
@@ -204,7 +216,13 @@ img {
 
         }
         .item-title-title {
+          color: #0D0D0D;
           font-size: 30px;
+          line-height: 40px;
+          max-width: 494px;
+          margin: 0 auto;
+          margin-bottom: 20px;
+          letter-spacing: -1px;
           @media (max-width: 1200px){
            font-size: 20px;
           }
@@ -214,12 +232,15 @@ img {
         }
         .item-title-text {
           font-size: 16px;
-          padding-top: 10px;
+          line-height: 20px;
+          color: #0D0D0D;
+          margin-bottom: 5px;
         }
         .item-title-tg {
           font-size: 15px;
           opacity: 30%;
           color: #000;
+          line-height: 22px;
         }
       }
     }
